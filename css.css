@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #0a0000;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    position: relative;
+}
+
+nav .action {
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+    background-color: rgba(30, 24, 24, 0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(159, 160, 170, 0.37);
+}
+
+nav .action button {
+    background-color: rgba(102, 97, 97, 0.1);
+    color: #0c0000;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+nav .action button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.back-arrow {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    color: #0a0000;
+}
+
+.back-arrow:hover {
+    transform: translateY(-50%) scale(1.2); 
+}
+
+.matter h1{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.matter p{
+    padding-left: 35px;
+    padding-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    margin: 10px;
+    font-size: 16px;
+}
+.img{
+    width: 450px;
+    height: 350px;
+    padding: 30px 30px 30px 60px;
+}
+
+h3{
+    font-size: 18px;
+    padding-top: 30px;
+    margin-left: 40px;
+    font-weight: 600; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+li{
+    margin-left: 80px;
+    margin-bottom: 8px;
+}
+
+.image{
+    width: 500px;
+    height: 450px;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 60px;
+}
+
+
+footer {
+    background: #2C2F33;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-left: 25px;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.social-icons a img {
+    width: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #FFD700;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #E0C000;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFD700;
+    color: #222;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
